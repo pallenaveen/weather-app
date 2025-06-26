@@ -1,4 +1,4 @@
-const apiLink = "https://api.weatherapi.com/v1/current.json";
+const apiLink = "http://api.weatherapi.com/v1/current.json";
 const apiKey = "key=dc238d9948374f76aa680802252306";
 
 const input = document.getElementById("input");
