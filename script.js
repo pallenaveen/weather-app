@@ -14,7 +14,6 @@ button.addEventListener("click", () => {
 
   let totalApiLink = `${apiLink}?${apiKey}&q=${city}&aqi=yes`;
   // http://api.weatherapi.com/v1/current.json?key=dc238d9948374f76aa680802252306&q=London&aqi=yes
-  console.log(totalApiLink);
 
   fetch(totalApiLink)
     .then((res) => res.json())
