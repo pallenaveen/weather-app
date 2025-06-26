@@ -19,11 +19,7 @@ button.addEventListener("click", () => {
   fetch(totalApiLink)
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
-      console.log(data.current.temp_c);
-      console.log(data.current.temp_f);
-      console.log(data.current.condition);
-
+      
       details[0].innerText = `${data.location.name}, ${data.location.country}`;
       details[1].innerText = `Temp: ${data.current.temp_c} °C`;
       image.src = data.current.condition.icon;
